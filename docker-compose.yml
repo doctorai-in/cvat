@@ -58,8 +58,6 @@ services:
       - cvat_keys:/home/django/keys
       - cvat_logs:/home/django/logs
       - cvat_models:/home/django/models
-      - cvat_share:/home/django/share:ro
-
   cvat_ui:
     container_name: cvat_ui
     image: cvat/ui
@@ -109,10 +107,4 @@ volumes:
   cvat_keys:
   cvat_logs:
   cvat_models:
-  cvat_share:
-    driver: local
-    driver_opts:
-      type: none
-      device: /home/ssd_doctorai/gs1
-      o: bind
 
