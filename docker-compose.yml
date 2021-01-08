@@ -58,7 +58,7 @@ services:
       - cvat_keys:/home/django/keys
       - cvat_logs:/home/django/logs
       - cvat_models:/home/django/models
-      #- /home/ssd_doctorai/gs:/home/django/share
+      - /home/ssd_doctorai/gs_bucket:/home/django/share
 
   cvat_ui:
     container_name: cvat_ui
