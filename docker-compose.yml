@@ -109,10 +109,10 @@ volumes:
   cvat_keys:
   cvat_logs:
   cvat_models:
-  cvat_share:
-    driver: local
-    driver_opts:
-      type: none
-      device: /home/ssd_doctorai/gs
-      o: bind
+  #cvat_share:
+    #driver: local
+    #driver_opts:
+      #type: none
+      #device: /home/ssd_doctorai/gs
+      #o: bind
 
