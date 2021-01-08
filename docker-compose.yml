@@ -87,7 +87,7 @@ services:
       - cvat
       - cvat_ui
     environment:
-      CVAT_HOST: localhost
+      CVAT_HOST: ${CVAT_HOST}
     ports:
       - '8080:80'
     volumes:
