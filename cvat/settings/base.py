@@ -332,7 +332,10 @@ CSRF_COOKIE_NAME = "csrftoken"
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-os.makedirs(STATIC_ROOT, exist_ok=True)
+try:
+    os.makedirs(STATIC_ROOT, exist_ok=True)
+except FileExistsError:
+    print ('Directory not created.')
 
 DATA_ROOT = os.path.join(BASE_DIR, 'data')
 os.makedirs(DATA_ROOT, exist_ok=True)
