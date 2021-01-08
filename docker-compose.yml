@@ -58,7 +58,7 @@ services:
       - cvat_keys:/home/django/keys
       - cvat_logs:/home/django/logs
       - cvat_models:/home/django/models
-      - /home/ssd_doctorai/gs_bucket:/home/django/share
+      - /home/ssd_doctorai/gs_bucket:/home/django/share:ro
 
   cvat_ui:
     container_name: cvat_ui
@@ -88,7 +88,7 @@ services:
       - cvat
       - cvat_ui
     environment:
-      CVAT_HOST: 104.198.218.173
+      CVAT_HOST: 104.197.167.201
     ports:
       - '8080:80'
     volumes:
