@@ -5,4 +5,6 @@ sudo apt-get update
 sudo apt-get install gcsfuse
 sudo usermod -a -G fuse $USER
 #
+gcloud auth login
 gcloud auth application-default login
+gcsfuse object-detection-pipeline-demo /mnt/share
