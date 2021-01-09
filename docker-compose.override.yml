@@ -11,5 +11,5 @@ volumes:
   cvat_share:
     driver_opts:
       type: none
-      device: /mnt/share
+      device: /mnt/sharedemo
       o: bind
